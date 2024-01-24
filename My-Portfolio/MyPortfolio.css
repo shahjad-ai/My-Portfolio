@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: "poppins","sans-serif";    
+}
+.main_box{
+height: 100vh;
+background-size: cover;
+}
+.btn1 i{
+font-size: 30px;
+font-weight: 700;
+position: absolute;
+left: 16px;
+line-height: 60px;
+color: rgb(6, 88, 126);
+}
+.sidebar_menu{
+position: absolute;
+left: -430px;
+height: 100vh;
+width: 370px;
+background-color: rgba(6, 88, 126, 0.8);
+box-shadow: 0 0 6px rgba(255,255,255, 0.5);
+transition: all 0.3s linear;
+}
+.sidebar_menu .logo{
+position: absolute;
+width: 100%;
+line-height: 60px;
+box-shadow: 0 0 6px rgba(255,255,255, 0.5);
+height: 60px;
+}
+.sidebar_menu .logo a{
+position: absolute;
+left: 50px;
+color: black;
+text-decoration: none;
+font-size: 20px;
+font-weight: 800;
+}
+.sidebar_menu .btn2 i{
+color: black;
+font-size: 25px;
+line-height: 60px;
+position: absolute;
+left: 345px;
+cursor: pointer;
+}
+.sidebar_menu .menu{
+position: absolute;
+width: 100%;
+top: 80px;
+}
+.sidebar_menu .menu li{
+margin-top: 6px;
+padding: 14px 20px;
+}
+.sidebar_menu .menu i,a{
+color: black;
+text-decoration: none;
+font-size: 30px;
+}
+
+.sidebar_menu .menu i{
+padding-right: 8px;
+}
+.sidebar_menu .social_media{
+position: absolute;
+left: 25%;
+bottom: 50px; 
+}
+.sidebar_menu .social_media i{
+color: black;
+opacity: 0.5;
+padding: 0 5px;
+}
+#check{
+display: none;
+}
+.sidebar_menu .menu li:hover{
+box-shadow: 0 0 4px rgba(255,255,255,0.5);
+}
+.btn1 i:hover{
+font-size: 40px;
+}
+.btn2 i:hover{
+font-size: 30px;
+}
+.sidebar_menu .social_media i:hover{
+opacity: 1;
+transform: scale(1.1);
+}
+#check:checked ~.sidebar_menu{
+left: 0px;
+position: fixed; 
+}
+#check:checked ~.btn1 i{
+opacity: 0;
+}
+.sidebar_menu .logo .profile_pic img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.sidebar_menu .logo .profile_pic{
+    padding-top: 4px;
+    padding-left: 10px;
+}
+.sidebar_menu .logo .head a{
+    left: 75px;
+    font-size: 30px;
+}
+body{
+    display: flex;
+    background-color: rgba(121, 198, 228,0.4);
+}
+.content{
+    left: 400px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    padding:5px;
+}
+.box{
+    border: 1px solid rgb(254, 64, 102);
+    border-radius: 1px 10px 10px 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.content i{
+    color: 	rgb(28,150,197);
+}
+.image img{
+    height: 100px;
+    width: 100px;
+    border-radius: 4px;
+}
+@media(min-width:400px) {
+    .header{
+        display: flex;
+        justify-content: space-between;
+}
+}
+/* certificate */
+.solo{
+    background-color: #f2eee7 ;
+    width: 90%;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border-radius: 10px;
+    transition: 0.3s;
+    padding-bottom: 20px;
+    box-shadow: -7px 5px 10px grey;
+}
+.school,.Online_course img{
+    width: 100%; 
+}
+.solo:hover{
+    transform: scale(1.03);
+    box-shadow: -10px 5px 10px white;
+}
+.Online_course{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.school,.Online_course{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    background-color: skyblue;
+}
+.solo img{
+    width: 85%;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.name{
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(252,142,172,0.97);
+}
+.skill{
+    color: black;
+    background-color: rgb(252,142,172);
+    padding: 5px;
+    text-transform: uppercase;
+}
+.header{
+    padding-top:10px ;
+}
